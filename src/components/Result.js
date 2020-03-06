@@ -1,6 +1,6 @@
 import React from 'react';
 import { GoogleLogout } from 'react-google-login';
-import GOOGLE_CLIENT from '../config/secret';
+import GOOGLE_CLIENT from '../config/secret.default';
 import { useHistory, Redirect } from 'react-router-dom';
 
 const Result = () => {
