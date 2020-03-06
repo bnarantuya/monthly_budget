@@ -1,3 +1,3 @@
 export default {
-    google: "dummy"
+    GOOGLE_CLIENT: "dummy"
 }
