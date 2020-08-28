@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
-import Login from './components/Login';
-import Welcome from './components/Welcome';
-import Result from './components/Result';
+import Login from './components/Login/Login';
+import Welcome from './components/Welcome/Welcome';
+import Result from './components/Result/Result';
 import PrivateRoute from './components/PrivateRoute';
 
 const routing = (

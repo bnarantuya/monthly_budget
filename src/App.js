@@ -4,7 +4,6 @@ import { Redirect } from 'react-router-dom';
 
 function App() {
   return (
-    
     <div className="App">
       <Redirect from='/' to="/welcome/" />
     </div>

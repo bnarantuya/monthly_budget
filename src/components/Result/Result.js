@@ -1,12 +1,11 @@
 import React from 'react';
 import { GoogleLogout } from 'react-google-login';
-import GOOGLE_CLIENT from '../config/secret';
-import { useHistory, Redirect } from 'react-router-dom';
+import GOOGLE_CLIENT from '../../config/secret';
+import { useHistory } from 'react-router-dom';
 
 const Result = () => {
     let data = localStorage.getItem('userObj');
     const history = useHistory();
-
     const logout = () => {
         localStorage.removeItem('googleLogin');
         localStorage.removeItem('userObj');
@@ -14,7 +13,6 @@ const Result = () => {
     }
 
     if(!data) {
-        console.log("GG");
         return '';
     }
     data = JSON.parse(data);
